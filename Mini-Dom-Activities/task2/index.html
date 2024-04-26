@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hello" onclick="addHello()">Add Hello</button>
+    <div id="addhello"><br></div>
+    <script>
+        var a=document.getElementById("addhello")
+        function addHello(){
+            // document.getElementById("addhello").innerHTML="Hello"
+            // create a new element to create new h1 tag again and again
+            var head=document.createElement("h3")
+            head.textContent="Hello"
+            a.append(head)
+        }
+    </script>
+</body>
+</html>

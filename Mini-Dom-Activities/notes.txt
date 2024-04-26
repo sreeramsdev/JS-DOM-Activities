@@ -1,0 +1,37 @@
+function update(){
+            result.textContent=a.value    //it gets the value of the inputbox a
+        }
+
+creation of element 
+
+ function addHello(){
+            // document.getElementById("addhello").innerHTML="Hello"
+            // create a new element to create new h1 tag again and again
+            var head=document.createElement("h1")
+            head.textContent="Hello"
+            a.append(head)
+        }
+
+
+giving style to the elements
+
+            document.getElementById("colorChange").innerHTML=change.style.backgroundColor="red"
+
+
+for deleting an elememt
+
+.remove()
+<h1 onclick="deleteItem(event)">One</h1>
+    <h1 onclick="deleteItem(event)">Two</h1>
+    <h1 onclick="deleteItem(event)">Three</h1>
+    <h1 onclick="deleteItem(event)">Four</h1>
+    <h1 onclick="deleteItem(event)">Five</h1>
+    <h1 onclick="deleteItem(event)">Six</h1>
+  <script>
+    //  var h1=document.getElementById("one")
+        function deleteItem(event){
+            
+            event.target.remove()
+        }
+
+  </script>
